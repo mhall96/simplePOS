@@ -1,4 +1,4 @@
-package com.project.simplepos.model;
+/*package com.project.simplepos.model;
 
 import java.util.UUID;
 
@@ -23,3 +23,4 @@ public class User {
 		return name;
 	}
 }
+*/

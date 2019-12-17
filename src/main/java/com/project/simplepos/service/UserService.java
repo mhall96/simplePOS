@@ -1,4 +1,6 @@
-package com.project.simplepos.service;
+/*package com.project.simplepos.service;
+
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -21,4 +23,8 @@ public class UserService {
 		return userDAO.insertUser(user);
 	}
 	
+	public List<User> getAllUsers(){
+		return userDAO.selectAllUsers();
+	}
 }
+*/

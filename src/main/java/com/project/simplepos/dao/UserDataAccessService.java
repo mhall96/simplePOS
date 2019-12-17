@@ -1,4 +1,4 @@
-package com.project.simplepos.dao;
+/*package com.project.simplepos.dao;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -19,4 +19,10 @@ public class UserDataAccessService implements UserDAO {
 		return 1;
 	}
 
+	@Override
+	public List<User> selectAllUsers() {
+		return db;
+	}
+
 }
+*/
