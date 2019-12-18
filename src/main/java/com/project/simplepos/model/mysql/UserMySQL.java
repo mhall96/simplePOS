@@ -12,7 +12,7 @@ import javax.persistence.Table;
 public class UserMySQL {
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="id")
 	private Integer id;
 
@@ -20,6 +20,10 @@ public class UserMySQL {
 	private String name;
 	
 	public UserMySQL() {}
+	
+	public UserMySQL(String name) {
+		this.setName(name);
+	}
 	
 	public UserMySQL(int id, String name) {
 		this.setId(id);
