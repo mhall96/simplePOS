@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.project.simplepos.dao.mysql.UserMySQLRepository;
 import com.project.simplepos.model.mysql.UserMySQL;
+import com.project.simplepos.service.mysql.UserServiceJDBC;
 import com.project.simplepos.service.mysql.UserServiceMySQL;
 
 @RestController
@@ -19,7 +20,7 @@ import com.project.simplepos.service.mysql.UserServiceMySQL;
 public class UserControllerMySQL {
 	
 	@Autowired
-	UserServiceMySQL userService;
+	UserServiceJDBC userService;
 	
 	 @GetMapping("/users")
 	 public List<UserMySQL> returnAllUsers(){
@@ -27,7 +28,7 @@ public class UserControllerMySQL {
 	 }
 	 
 	 @PostMapping("/saveuser")
-	 public UserMySQL saveUser(@RequestBody Map<String, String> requestBody) {
+	 public int addUser(@RequestBody Map<String, String> requestBody) {
 		 return userService.addUser(requestBody);
 	 }
 	 
