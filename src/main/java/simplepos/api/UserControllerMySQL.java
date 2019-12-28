@@ -1,4 +1,4 @@
-package com.project.simplepos.api.mysql;
+package simplepos.api;
 
 import java.util.List;
 import java.util.Map;
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.project.simplepos.model.mysql.User;
-import com.project.simplepos.service.mysql.UserServiceJDBC;
+import simplepos.model.User;
+import simplepos.service.UserServiceJDBC;
 
 @RestController
 @RequestMapping("api/v2")

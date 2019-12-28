@@ -1,4 +1,4 @@
-package com.project.simplepos.service.mysql;
+package simplepos.service;
 
 import java.util.List;
 import java.util.Map;
@@ -6,8 +6,8 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.project.simplepos.dao.mysql.UserDAO;
-import com.project.simplepos.model.mysql.User;
+import simplepos.dao.UserDAO;
+import simplepos.model.User;
 
 @Service
 public class UserServiceJDBC {

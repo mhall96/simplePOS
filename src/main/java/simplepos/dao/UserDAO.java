@@ -1,4 +1,4 @@
-package com.project.simplepos.dao.mysql;
+package simplepos.dao;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
 import org.springframework.stereotype.Repository;
 
-import com.project.simplepos.model.mysql.User;
+import simplepos.model.User;
 
 @Repository
 public class UserDAO extends JdbcDaoSupport{
